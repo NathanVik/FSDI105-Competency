@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Register Users</title>
+</head>
+<body>
+    <nav>
+        <ul class="menu-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="users.html">List Users</a></li>
+            <li class="active"><a href="register.html">Register User</a></li>
+        </ul>
+        <div class="menu-info">
+            <label>3 users</label>
+        </div>
+    </nav>
+    <h1>Register a new User into the system</h1>
+<div class="page-container">
+<div class="capture-form">
+    <div id="alertError" class="password-error alert-error hide">Error</div>    
+        <h3 id="userColor">User Information</h3>
+        <div class="control">
+            <label>Email</label>
+            <input id="txtEmail" type="email">
+        </div>
+        
+        <div class="control">
+            <label>Password</label>
+            <input id="txtPassword" type="password">
+        </div>
+
+        <div class="control">
+            <label>First Name</label>
+            <input id="txtFirst" type="text">
+        </div>
+        
+        <div class="control">
+            <label>Last Name</label>
+            <input id="txtLast" type="text">
+        </div>
+        
+        <div class="control">
+            <label>Age</label>
+            <input id="txtAge" type="number">
+        </div>
+        
+        <div class="control">
+            <label>Address</label>
+            <input id="txtAddress" type="text">
+        </div>
+        
+        <div class="control">
+            <label>Phone Number</label>
+            <input id="txtPhone" type="tel">
+        </div>
+        
+        <div class="control">
+            <label>Payment</label>
+            <select id="selPayment">
+                <option value="paypal">Paypal</option>
+                <option value="check">Check</option>
+                <option value="cash">Cash</option>
+                <option value="games">Videogames</option>
+            </select>
+        </div>
+        
+        <div class="control">
+            <label>Favorite Color</label>
+            <input id="selColor" type="color">
+        </div>
+        <div class="control">
+            <button id="btnSave">Register User</button>
+        </div>
+</div>
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/storageManager.js"></script>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/register.js"></script>
+</body>
+</html>
+
+<!-- 
+    email
+    password
+    first name
+    last name
+    age
+    address
+    phone
+    payment info
+    favorite color
+ -->

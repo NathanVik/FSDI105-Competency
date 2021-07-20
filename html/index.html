@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/menu.css">
+
+    <title>Login</title>
+</head>
+<body>
+    <nav>
+        <ul class="menu-items">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="users.html">List Users</a></li>
+            <li><a href="register.html">Register User</a></li>
+        </ul>
+        <div class="menu-info">
+            <label>3 users</label>
+        </div>
+    </nav>
+    <h1>Login to our amazing system!</h1>
+    <div class="page-container">
+        <div class="capture-form" id="loginForm">
+            <h3>Login</h3>
+                <div  class="control">
+                    <input id="loginEmail" type="text" placeholder="Email">
+                </div>
+                <div class="control">
+                    <input id="loginPassword" type="password" placeholder="Password">
+                </div>
+                <div class="control">
+                    <button id="btnLogin">Login</button>
+                </div>
+                <div id="loginError" class="alert-error hide">Error</div>
+
+        </div>
+        <div class="capture-form" id="currentLogin">
+        <div class="control">
+            <h3>Already Logged In</h3>
+            <div class="control" id="login-info"></div>
+            <button id="btnLogout">Log Out</button>
+        </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/storageManager.js"></script>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/login.js"></script>
+</body>
+</html>

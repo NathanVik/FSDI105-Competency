@@ -1,0 +1,50 @@
+:root {
+    --nav-background: rgb(80, 80, 80);
+    --nav-text:blanchedalmond;
+    --nav-primary:teal;
+}
+
+
+nav{ 
+    background-color: var(--nav-background);
+    margin: 0;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .menu-items {
+    text-decoration: none;
+    list-style: none;
+}
+
+nav .menu-items li {
+    display: inline-block;
+}
+
+nav .menu-items li a {
+    color:var(--nav-text);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 7px 10px;
+    transition: all 0.2s ease;
+}
+
+nav .menu-items li a:hover {
+    color: var(--nav-primary);
+}
+
+nav .menu-items li.active a{
+    background-color: var(--nav-primary);
+    padding: 7px 12px;
+    color: var(--nav-text);
+    border-radius: 14px;
+}
+nav .menu-info label {
+    color:var(--nav-text);
+    background-color: darkred;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+}

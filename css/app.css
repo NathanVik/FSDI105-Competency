@@ -1,0 +1,117 @@
+*{
+    margin:0;
+}
+
+.page-container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    color: blanchedalmond;
+    background-color: black;
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding: 10px 0;
+
+}
+.capture-form{
+    border: 1px solid black;
+    width: 340px;
+    padding-top: 20px;
+    border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
+}
+ .capture-form h3{
+    text-align: center;
+    padding-bottom: 9px;
+    font-size: 21px;
+    margin: 0;
+ }
+.control{
+    padding: 5px 10px;
+
+
+}
+
+.control label{
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+}
+.control input,
+.control select{
+    display: inline-block;
+    width: 150px;
+    padding: 4px 7px;
+    margin-left: 5px;
+}
+.control select{
+    width: 168px;
+}
+
+#btnSave{
+    display: flex;
+    padding: 4px 7px;
+    margin-left: 117px;
+    justify-content: flex-end;
+}
+#btnLogin{
+    display: flex;
+    padding: 4px 7px;
+    margin-left: 117px;
+    justify-content: flex-end;
+}
+.alert-error{
+    border: 1px solid #f5c6cb;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 5px 15px;
+}
+.password-error{
+    margin: 10px 20px;
+}
+.hide{
+    display: none;
+}
+
+
+/* **************************************** */
+/* *******   List Page Styles   *********** */
+/* **************************************** */
+.userList {
+    display: inline-table;
+    width: 100%;
+    align-items: center;
+    border-spacing: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid black;
+}
+.userList th, .userList td {
+    width: 100px;
+    text-align: center;
+    padding: 2px;
+    font-size: 1rem;
+}
+.userList thead{
+    background-color: rgb(179, 179, 179);
+    padding: 5px;
+
+}
+.userList tbody tr:nth-child(odd){
+    background-color: rgb(231, 253, 198);
+}
+.userList tbody tr:hover {
+    background-color: rgb(250, 183, 183);
+}
+#userListClear{
+    background-color: rgb(214, 66, 96);
+    padding: 5px;
+    
+}
+.btnClear{
+    display: flex;
+    justify-content: flex-end;
+}
